@@ -1,0 +1,255 @@
+.feedback {
+    background: url('../img/feedback/Frame\ 1.jpg') 00/ cover no-repeat;
+    /* padding-top: 133px; */
+    padding-top: 8.3125rem;
+    /* padding-bottom: 94px; */
+    padding-bottom: 5.875rem;
+}
+
+.feedback__container {
+    /* height: 727px; */
+}
+
+.feedback__body {
+    box-sizing: border-box;
+    max-width: 976.03px;
+    background: url('../img/feedback/krug.svg') 133px 25px/ 318px 313px no-repeat, #FFFFFF;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.14),
+        0px 16px 24px rgba(0, 0, 0, 0.08);
+    /* padding-top: 74px;
+    padding-left: 201px;
+    padding-bottom: 65px;
+    padding-right: 131px; */
+    padding-top: 4.625rem;
+    padding-left: 17.08%;
+    padding-bottom: 4.0625rem;
+    padding-right: 11.13%;
+}
+
+.feedback__title {
+    /* padding-bottom: 43px; */
+    padding-bottom: 2.6875rem;
+}
+
+.feedback__title h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    /* font-size: 36px; */
+    font-size: 2.25rem;
+    /* line-height: 42px; */
+    line-height: 2.625rem;
+    color: #000000;
+}
+
+.feedback__form {
+    max-width: 641px;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form label {
+    font-family: 'Roboto';
+    font-weight: 400;
+    /* font-size: 12px; */
+    font-size: 0.75rem;
+    /* line-height: 20px; */
+    line-height: 1.25rem;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.form input {
+    height: 25px;
+    color: black;
+    border: none;
+    border-bottom: 1px solid #979797;
+    background: transparent;
+}
+label{
+    transition-duration: 0.6s;
+    transition-property: color;
+}
+input{
+    transition-duration: 0.6s;
+    transition-property: border-bottom;
+}
+
+input:focus:valid {
+    outline: none;
+    border-bottom: 2px solid #651FFF;
+}
+
+input:focus:invalid {
+    outline: none;
+    border-bottom: 2px solid red;
+}
+
+input:focus::placeholder {
+    color: #979797;
+}
+
+.form__item:focus-within label {
+    color: #651FFF;
+}
+
+.form select {
+    height: 28px;
+    border: none;
+    border-bottom: 1px solid #979797;
+    /* width: 305px;
+    height: 48px; */
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 305px;
+    width: 48%;
+    height: 48px;
+    /* margin-bottom: 24px; */
+    margin-bottom: 1.5rem;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+.form__item:nth-child(2n+1) {
+    /* margin-right: 24px; */
+    margin-right: 3.75%;
+}
+
+.form__polit-konfid {
+    display: flex;
+    width: 100%;
+}
+
+.polit-konfid {
+    max-width: 307px;
+    width: 48%;
+    font-weight: 400;
+    /* font-size: 12px; */
+    font-size: 0.75rem;
+    /* line-height: 18px; */
+    line-height: 1.125rem;
+}
+
+.form__polit-konfid a {
+    text-decoration: underline;
+    transition-duration: 0.6s;
+    transition-property: color;
+}
+.form__polit-konfid a:hover {
+    color: #651FFF;
+}
+
+.form__btn {
+    position: relative;
+    width: 199px;
+    height: 60px;
+    background: #000000;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    /* margin-left: 130px; */
+    margin-left: 20.3%;
+    transition-duration: 0.6s, 1s;
+    transition-property: color, background-color;
+}
+.form__btn:hover {
+    background-color: white;
+    color: #000000;
+    border: 3px solid black;
+}
+.form__btn:hover::after{
+    top: 26px;
+    left: 101%;
+    border-top: 32px solid black;
+    border-right: 18px solid transparent;
+}
+.form__btn:hover::before{
+    top: -4px;
+    left: 101%;
+    border-right: 18px solid transparent;
+    border-bottom: 32px solid black;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+}
+
+.form__btn::after {
+    content: '';
+
+    position: absolute;
+    /* left: 199px; */
+    left: 99.99999%;
+    top: 30px;
+
+    border-top: 30px solid black;
+    border-right: 15px solid transparent;
+}
+
+.form__btn::before {
+    content: '';
+
+    position: absolute;
+    /* left: 199px; */
+    left: 99.99999%;
+    top: 0px;
+
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid black;
+
+}
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    .form{
+        justify-content: center;
+    }
+    .form__item {
+        width: 100%;
+        
+    }
+
+    .form__polit-konfid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .polit-konfid {
+        width: 100%;
+    }
+    .form__btn {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    .form__item:nth-child(2n+1) {
+        /* margin-right: 24px; */
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+    .polit-konfid {
+        width: 100%;
+    }
+    
+
+}

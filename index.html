@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/wrapper.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/conductor.css">
+    <link rel="stylesheet" href="./css/situation-solution.css">
+    <link rel="stylesheet" href="./css/profit.css">
+    <link rel="stylesheet" href="./css/reasons.css">
+    <link rel="stylesheet" href="./css/for-whom.css">
+    <link rel="stylesheet" href="./css/achievements.css">
+    <link rel="stylesheet" href="./css/start.css">
+    <link rel="stylesheet" href="./css/feedback.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./img/fontello/css/fontello.css">
+    <!-- <link rel="stylesheet" href="./img/fontello/css/fontello-codes.css">
+    <link rel="stylesheet" href="./img/fontello/css/fontello-ie7.css">
+    <link rel="stylesheet" href="./img/fontello/css/fontello-ie7-codes.css">
+    <link rel="stylesheet" href="./img/fontello/css/fontello-embedded.css"> -->
+    <title>Проводник</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <h1><a class="header__logo logo" href="">Проводник</a></h1>
+                <nav class="menu">
+                    
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="">УСЛУГИ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">ЦЕНЫ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">КАК ЭТО РАБОТАЕТ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">БЛОГ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">О КОМПАНИИ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">ПРОИЗВОДИТЕЛЯМ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">ПРОЕКТЫ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                
+                </nav>
+                <div class="header__contacts contacts">
+                    <div class="contacts__adress header__adress">
+                        <i class="icon-location"></i>
+                        <p class="adress-gps">г. Москва, ул. Улица, 20 с. 1</p>
+                    </div>
+                    <div class="contacts__tel-email header__tel-email">
+                        <div class="b-tel">
+                            <i class="icon-phone"></i>
+                            <a class="tel" href="tel:+71231231288">8(123) 123-12-88</a>
+                        </div>
+                        <a class="email" href="mailto:info@provodnik.ru">info@provodnik.ru</a>
+                    </div>
+                    <button type="button" class="button contacts__btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Обратный звонок
+                    </button>
+                </div>
+                    <div class="burger">
+                        <input type="checkbox" id="checkbox" class="wrapper__checkbox">
+                        <label for="checkbox" class="wrapper__button">
+                            <span class="wrapper__button-line"></span>
+                            <span class="wrapper__button-line"></span>
+                            <span class="wrapper__button-line"></span>
+                        </label>
+                        <div class="wrapper__menu">
+                            <a class="wrapper__menu-link" href="">УСЛУГИ</a>
+                            <a class="wrapper__menu-link" href="">ЦЕНЫ</a>
+                            <a href="#" class="wrapper__menu-link">КАК ЭТО РАБОТАЕТ</a>
+                            <a href="#" class="wrapper__menu-link">БЛОГ</a>
+                            <a class="wrapper__menu-link" href="">О КОМПАНИИ</a>
+                            <a class="wrapper__menu-link" href="">ПРОИЗВОДИТЕЛЯМ</a>
+                            <a href="#" class="wrapper__menu-link">ПРОЕКТЫ</a>
+                            <a href="#" class="wrapper__menu-link">КОНТАКТЫ</a>
+                            
+                            <div class="burder-contacts contacts header__burger">
+                                <div class="contacts__adress header__adress">
+                                    <i class="icon-location"></i>
+                                    <p class="adress-gps">г. Москва, ул. Улица, 20 с. 1</p>
+                                </div>
+                                <div class="contacts__tel-email header__tel-email">
+                                    <div class="b-tel">
+                                        <i class="icon-phone"></i>
+                                        <a class="tel" href="tel:+71231231288">8(123) 123-12-88</a>
+                                    </div>
+                                    <a class="email" href="mailto:info@provodnik.ru">info@provodnik.ru</a>
+                                </div>
+                                <button type="button" class="button contacts__btn" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Обратный звонок
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="exampleModalLabel">Обратная связь</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form" action="/" method="POST">
+                                        <div class="form__name form__item">
+                                            <label for="f-name">Имя</label>
+                                            <input type="text" name="f-name" id="f-name" required
+                                                pattern="[A-Za-zА-Яа-яЁё]{2,}" placeholder="Как к Вам обращаться">
+                                        </div>
+                                        <div class="form__career form__item">
+                                            <label for="f-career">Кто Вы</label>
+                                            <select class="career" name="f-career" id="f-career" required>
+                                                <option value="">Выберите род деятельности</option>
+                                                <option value="1">Медицина</option>
+                                                <option value="2">Строительство</option>
+                                            </select>
+                                        </div>
+                                        <div class="form__tel form__item">
+                                            <label for="f-tel">Телефон</label>
+                                            <input type="tel" name="f-tel" id="f-tel" required pattern="[0-9]{12,}"
+                                                placeholder="+7 (123) 12-12-123">
+                                        </div>
+                                        <div class="form__domen form__item">
+                                            <label for="f-domen">Домен (если есть)</label>
+                                            <input type="number" name="f-domen" id="f-domen">
+                                        </div>
+                                        <div class="form__email form__item">
+                                            <label for="f-email">E-mail</label>
+                                            <input type="email" name="f-email" id="f-email"
+                                                placeholder="Нужен для связи" required
+                                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                        </div>
+                                        <div class="form__focus form__item">
+                                            <label for="f-focus">Focused state</label>
+                                            <input type="text" name="f-focus" id="f-focus" placeholder="Input caption">
+                                        </div>
+                                        <div class="form__pol-konf">
+                                            <p>
+                                                Оправляя форму, вы соглашаетесь на сбор, обработку
+                                                и хранение ваших данных сотрудниками компании.
+                                            </p>
+                                            <a href="/">Политика конфиденциальности</a>
+                                        </div>
+                                        <button class="form__btn button" type="submit">Отправить</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </header>
+        <main class="main">
+            <section class="conductor">
+                <div class="conductor__container container">
+                    <div class="conductor__body ">
+                        <div class="conductor__title">
+                            <p>зайди на</p>
+                            <a href="/index.html"><img src="./img/conductor/Aliexpress_logo.svg" alt=""></a>
+                        </div>
+                        <div class="conductor__text">
+                            <h2>Лучшее решение для небольших интернет-магазинов и производителей</h2>
+                        </div>
+                        <a class="conductor__btn button" href="">Хочу на AliExpress</a>
+                    </div>
+                </div>
+            </section>
+            <section class="situation-solution">
+                <div class="situation-solution__container container">
+                    <div class="situation-solution__body">
+                        <div class="situation-solution__left">
+                            <div class="tally tally--mod-mb2-l">Ситуация</div>
+                            <div class="situation-solution__img">
+                                <img src="./img/situation-solution/Rectangle@3x.jpg" alt="">
+                            </div>
+                            <div class="situation-solution-18">
+                                <p>Вы тратите много сил и денег на маркетинг и рекламу своих товаров. Самые эффективные
+                                    из каналов — дорогие и требуют большой работы.</p>
+                            </div>
+                        </div>
+                        <div class="situation-solution__right">
+                            <div class="tally tally--mod-mb2-r">Решение</div>
+                            <h3 class="situation-solution__title">Точнее, их два.</h3>
+                            <div class="top">
+                                <div class="target">
+                                    <div class="target__num">1</div>
+                                    <div class="target__black-circle">№</div>
+                                </div>
+                                <div class="situation-solution-14">
+                                    <p>Сотрудничать с существующим магазином
+                                        на AliExpress и избавить себя от забот вроде вопросов колл-центра, хранения и
+                                        доставки.
+                                        И опять же – не тратиться на маркетинг.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bot">
+                                <div class="target">
+                                    <div class="target__num">2</div>
+                                    <div class="target__black-circle">№</div>
+                                </div>
+                                <div class="situation-solution-14">
+                                    <p>Cоздать магазин на маркетплейсе AliExpress
+                                        и реализовывать товары покупателям со всего мира. Один емкий и грамотный канал
+                                        продаж заменит все рекламные инструменты, которыми вы пользовались до этого.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="profit">
+                <div class="profit__container container">
+                    <div class="profit__body">
+                        <div class="profit__title">
+                            <h2>
+                                Что вы получите с магазином
+                                на AliExpress?
+                            </h2>
+                        </div>
+                        <div class="profit__options">
+                            <div class="optioms-item">
+                                <i class="icon-calculator"></i>
+                                <p>
+                                    Снизите операционные расходы
+                                    и расходы на маркетинг.
+                                </p>
+                            </div>
+                            <div class="optioms-item">
+                                <i class="icon-arrow"></i>
+                                <p>
+                                    Трафик из очень активных
+                                    покупателей из регионов.
+                                </p>
+                            </div>
+                            <div class="optioms-item">
+                                <i class="icon-airplane"></i>
+                                <p>
+                                    Сможете реализовывать продукцию
+                                    в очень больших объемах.
+                                </p>
+                            </div>
+                            <div class="optioms-item">
+                                <i class="icon-rub"></i>
+                                <p>
+                                    В 2020 году еще увеличите продажи
+                                    за счет покупателей из стран СНГ.
+                                </p>
+                            </div>
+                        </div>
+                        <a class="profit__btn button" href="">Скачать предложение</a>
+                    </div>
+                </div>
+            </section>
+            <section class="reasons">
+                <div class="reasons__container container">
+                    <div class="reasons__body">
+                        <div class="reasons__title">
+                            <h2>
+                                Почему выходить на AliExpress самостоятельно сложно?
+                            </h2>
+                        </div>
+                        <div class="top-column">
+                            <div class="top-column-left">
+                                <div class="tally tally--mod-mb4-l">Самостоятельно</div>
+                                <ul class="top-column-left__list">
+                                    <li class="top-column-left__list-item">Китайская площадка со сложными правилами и
+                                        формулами.
+                                    </li>
+                                    <li class="top-column-left__list-item">Ограниченные возможности без статуса
+                                        технического партнера.
+                                    </li>
+                                    <li class="top-column-left__list-item">Очень тяжело добиться высокого рейтинга
+                                        магазинов и товаров – <br>
+                                        <strong>главного фактора в выдаче по запросу.</strong>
+                                    </li>
+                                </ul>
+                                <div class="top-column-left__img">
+                                    <img src="./img/reasons/Notebook.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="top-column-right">
+                                <div class="tally tally--mod-mb4-r">С техническим партнером Content Hub</div>
+                                <ul class="top-column-right__list">
+                                    <li class="top-column-right__list-item">Берем заключение договора на себя.</li>
+                                    <li class="top-column-right__list-item">Помогаем с описанием товаров.</li>
+                                    <li class="top-column-right__list-item">Брендируем магазин.</li>
+                                    <li class="top-column-right__list-item">Создаем аккаунт.</li>
+                                    <li class="top-column-right__list-item">Коннектим магазин с вашей CRM.</li>
+                                </ul>
+                                <div class="top-column-right__text">
+                                    <i class="icon-mac"></i>
+                                    <p>И главное — продвигаем в рейтинге на первые позиции в выдаче.</p>
+                                </div>
+                                <a class="reasons__btn button" href="">Написать нам</a>
+                            </div>
+                        </div>
+                        <div class="bot-column">
+                            <div class="bot-column__title">
+                                <h2>Кому интересно на AliExpress с Проводником?</h2>
+                            </div>
+                            <div class="bot-column__container">
+                                <div class="bot-column__left">
+                                    <div class="left-b-c-icon">
+                                        <i class="icon-shop"></i>
+                                    </div>
+                                    <div class="left-b-c-text">
+                                        <h3>Небольшим интернет-магазинам</h3>
+                                        <p>С ограниченными ресурсами и бюджетом
+                                            на рекламу.</p>
+                                    </div>
+                                </div>
+                                <div class="bot-column__right">
+                                    <div class="right-b-c-icon">
+                                        <i class="icon-factory"></i>
+                                    </div>
+                                    <div class="right-b-c-text">
+                                        <h3>Небольшим производителям</h3>
+                                        <p>Готовы поставлять товар реселлеру и не хотят заниматься продвижением товаров
+                                            конечному покупателю.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="for-whom">
+                <div class="for-whom__container container">
+                    <div class="for-whom__body">
+                        <div class="for-whom__title">
+                            <h2>
+                                Как организован процесс?
+                            </h2>
+                        </div>
+                        <div class="for-whom__b-process">
+                            <div class="b-process">
+                                <img src="./img/for-whom/mishen-human.svg" alt="">
+                                <div class="b-process__item1">
+                                    Проводник ищет магазины
+                                    и производителей и заводит
+                                    их на маркетплейс.
+                                </div>
+                                <div class="b-process__item2">
+                                    Представляет интересы мерчантов и
+                                    коммуницирует с площадкой по всем
+                                    установочным вопросам.
+                                </div>
+                                <div class="b-process__item3">
+                                    Ищет партнеров-реселлеров при
+                                    необходимости и помогает наладить
+                                    взаимодействие.
+                                </div>
+                                <div class="b-process__item4">
+                                    Уже освоил алгоритм продвижения магазина
+                                    и готов его применить для вашей раскрутки
+                                    на маркетплейсе.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="achievements">
+                <div class="achievements__container container">
+                    <div class="achievements__body">
+                        <div class="achievements__title">
+                            <h2>
+                                Чего добились с Проводником <br>другие магазины?
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="achievements__tabs tabs">
+                        <a href="./keys.html" class="tally tally--mod-mb6">Кейс</a>
+                        <div class="tabs__body">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="saw1">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="tabs__content">
+                                                <div class="tabs__title">
+                                                    <h2>Продвижение и раскрутка магазина одежды</h2>
+                                                </div>
+                                                <div class="tabs__text">
+                                                    Проводник ищет магазины и производителей и заводит их на
+                                                    маркетплейс. Уже освоил алгоритм продвижения магазина и готов его
+                                                    применить для вашей раскрутки на маркетплейсе.
+                                                </div>
+
+                                            </div>
+                                            <div class="tabs__statistic">
+                                                <div class="statistic">
+                                                    <i class="statistic-num">765 885</i>
+                                                    <p>
+                                                        Законченных <br>
+                                                        покупок
+                                                    </p>
+                                                </div>
+                                                <div class="statistic">
+                                                    <i class="statistic-num">789 654</i>
+                                                    <p>
+                                                        Просмотров<br>
+                                                        магазина
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="tabs__content">
+                                                <div class="tabs__title">
+                                                    <h2>Продвижение и раскрутка магазина одежды</h2>
+                                                </div>
+                                                <div class="tabs__text">
+                                                    Проводник ищет магазины и производителей и заводит их на
+                                                    маркетплейс. Уже освоил алгоритм продвижения магазина и готов его
+                                                    применить для вашей раскрутки на маркетплейсе.
+                                                </div>
+
+                                            </div>
+                                            <div class="tabs__statistic">
+                                                <div class="statistic">
+                                                    <i class="statistic-num">765 885</i>
+                                                    <p>
+                                                        Законченных <br>
+                                                        покупок
+                                                    </p>
+                                                </div>
+                                                <div class="statistic">
+                                                    <i class="statistic-num">789 654</i>
+                                                    <p>
+                                                        Просмотров<br>
+                                                        магазина
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="tabs__content">
+                                                <div class="tabs__title">
+                                                    <h2>Продвижение и раскрутка магазина одежды</h2>
+                                                </div>
+                                                <div class="tabs__text">
+                                                    Проводник ищет магазины и производителей и заводит их на
+                                                    маркетплейс. Уже освоил алгоритм продвижения магазина и готов его
+                                                    применить для вашей раскрутки на маркетплейсе.
+                                                </div>
+
+                                            </div>
+                                            <div class="tabs__statistic">
+                                                <div class="statistic">
+                                                    <i class="statistic-num">765 885</i>
+                                                    <p>
+                                                        Законченных <br>
+                                                        покупок
+                                                    </p>
+                                                </div>
+                                                <div class="statistic">
+                                                    <i class="statistic-num">789 654</i>
+                                                    <p>
+                                                        Просмотров<br>
+                                                        магазина
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="tabs__content">
+                                                <div class="tabs__title">
+                                                    <h2>Продвижение и раскрутка магазина одежды</h2>
+                                                </div>
+                                                <div class="tabs__text">
+                                                    Проводник ищет магазины и производителей и заводит их на
+                                                    маркетплейс. Уже освоил алгоритм продвижения магазина и готов его
+                                                    применить для вашей раскрутки на маркетплейсе.
+                                                </div>
+
+                                            </div>
+                                            <div class="tabs__statistic">
+                                                <div class="statistic">
+                                                    <i class="statistic-num">765 885</i>
+                                                    <p>
+                                                        Законченных <br>
+                                                        покупок
+                                                    </p>
+                                                </div>
+                                                <div class="statistic">
+                                                    <i class="statistic-num">789 654</i>
+                                                    <p>
+                                                        Просмотров<br>
+                                                        магазина
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Предыдущий</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Следующий</span>
+                                    </button>
+                                </div>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="start">
+                <div class="start__container container">
+                    <div class="start__body">
+                        <div class="start__title">
+                            <h2>
+                                Как начать?
+                            </h2>
+                        </div>
+                        <div class="start__steps">
+                            <div class="steps">
+                                <div class="steps__item">Заполните форму.</div>
+                                <div class="steps__item">Обсудим ваши задачи с менеджером.</div>
+                                <div class="steps__item">Сформируем пакет услуг.</div>
+                                <div class="steps__item">Заключим договор.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="feedback__container container">
+                    <div class="feedback__body">
+                        <div class="feedback__title">
+                            <h2>Пожалуйста, оставьте свои контакты</h2>
+                        </div>
+                        <div class="feedback__form">
+                            <form class="form" action="/" method="POST">
+                                <div class="form__name form__item">
+                                    <label for="name">Имя</label>
+                                    <input type="text" name="name" id="name" required pattern="[A-Za-zА-Яа-яЁё]{2,}"
+                                        placeholder="Как к Вам обращаться">
+                                </div>
+                                <div class="form__career form__item">
+                                    <label for="career">Кто Вы</label>
+                                    <select class="career" name="career" id="career" required>
+                                        <option value="">Выберите род деятельности</option>
+                                        <option value="1">Медицина</option>
+                                        <option value="2">Строительство</option>
+                                    </select>
+                                </div>
+                                <div class="form__tel form__item">
+                                    <label for="tel">Телефон</label>
+                                    <input type="tel" name="tel" id="tel" required pattern="[0-9]{12,}"
+                                        placeholder="+7 (123) 12-12-123">
+                                </div>
+                                <div class="form__domen form__item">
+                                    <label for="domen">Домен (если есть)</label>
+                                    <input type="number" name="domen" id="domen">
+                                </div>
+                                <div class="form__email form__item">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email" id="email" placeholder="Нужен для связи" required
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                </div>
+                                <div class="form__focus form__item">
+                                    <label for="focus">Focused state</label>
+                                    <input type="text" name="focus" id="focus" placeholder="Input caption">
+                                </div>
+                                <div class="form__polit-konfid">
+                                    <div class="polit-konfid">
+                                        <p>
+                                            Оправляя форму, вы соглашаетесь на сбор, обработку
+                                            и хранение ваших данных сотрудниками компании.
+                                        </p>
+                                        <a href="/">Политика конфиденциальности</a>
+                                    </div>
+                                    <button class="form__btn button" type="submit">Отправить</button>
+                                </div>
+
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1><a class="logo footer__logo " href="">Проводник</a></h1>
+                <nav class="menu footer__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="">УСЛУГИ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">ЦЕНЫ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">КАК ЭТО РАБОТАЕТ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">БЛОГ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">О КОМПАНИИ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">ПРОИЗВОДИТЕЛЯМ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">ПРОЕКТЫ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts contacts">
+                    <div class="contacts__autor">
+                        <i>©</i>
+                        <p> 2018.<br> Все права защищены.</p>
+                    </div>
+                    <div class="contacts__adress footer__adress">
+                        <i class="icon-location"></i>
+                        <p class="adress-gps">г. Москва, ул. Улица, 20 с. 1</p>
+                    </div>
+                    <div class="contacts__tel-email footer__tel-email">
+                        <div class="b-tel">
+                            <i class="icon-phone"></i>
+                            <a class="tel" href="tel:+71231231288">8(123) 123-12-88</a>
+                        </div>
+                        <a class="email" href="mailto:info@provodnik.ru">info@provodnik.ru</a>
+                    </div>
+                    <div class="footer__icon-face">
+                        <a href="/" class="icon-facebook"></a>
+                    </div>
+                    <!-- <div class="contacts__call">
+                        <a class="contacts__btn button" href="">Обратный звонок</a>
+                    </div> -->
+                    <button type="button" class="button contacts__btn btn-footer" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Обратный звонок
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>

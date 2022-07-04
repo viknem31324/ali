@@ -1,0 +1,304 @@
+.for-whom {
+    background: #F5F5F5;
+    /* padding-top: 70px; */
+    padding-top: 4.375rem;
+}
+
+.for-whom__title {
+    /* padding-bottom: 71px; */
+    padding-bottom: 4.375rem;
+}
+
+.for-whom__title h2 {
+    font-weight: 700;
+    /* font-size: 32px; */
+    font-size: 2rem;
+    /* line-height: 42px; */
+    line-height: 2.625rem;
+}
+
+.for-whom__b-process {
+    position: relative;
+    width: 100%;
+    /* background: url('../img/for-whom/mishen-human.svg') 0px 10px/ 100% 100% no-repeat; */
+}
+
+.b-process {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    /* margin: 0 auto; */
+    width: 100%;
+    /* width: 100%;
+    height: 100%; */
+    max-height: 630px;
+    height: auto;
+    /* background: url('../img/for-whom/mishen-human.svg') 0px 10px/ 100% 100% no-repeat; */
+}
+
+.b-process__item1,
+.b-process__item2,
+.b-process__item3,
+.b-process__item4 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    text-align: right;
+    font-family: 'Roboto';
+    font-weight: 400;
+    /* font-size: 16px; */
+    font-size: 1rem;
+    /* line-height: 20px; */
+    line-height: 1.25rem;
+}
+
+.b-process__item1 {
+    box-sizing: content-box;
+    width: 220px;
+    /* left: -227px; */
+    left: 10.5%;
+    top: 408px;
+    /* padding-right: 73px; */
+    padding-right: 4.5625rem;
+}
+
+.b-process__item1::before {
+    content: '1';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+    /* line-height: 28px; */
+    line-height: 1.75rem;
+    width: 62px;
+    height: 62px;
+    left: 232px;
+    top: -4px;
+    border-radius: 50%;
+    background: radial-gradient(#651FFF 45%,
+            white 45% 55%, #FCBF14 55% 100%);
+    animation: front-rotation 5s ease-in-out infinite normal running 0s none;
+}
+
+.b-process__item2 {
+    box-sizing: content-box;
+    width: 300px;
+    /* left: -300px; */
+    left: 1%;
+    top: 128px;
+    /* padding-right: 73px; */
+    padding-right: 4.5625rem;
+}
+
+.b-process__item2::before {
+    content: '2';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+    /* line-height: 28px; */
+    font-size: 1.75rem;
+    width: 62px;
+    height: 62px;
+    left: 313px;
+    top: -4px;
+    border-radius: 50%;
+    background: radial-gradient(#651FFF 45%,
+            white 45% 55%, #FCBF14 55% 100%);
+    animation: front-rotation 5s ease-in-out infinite normal running 0s none;
+}
+
+.b-process__item3 {
+    box-sizing: content-box;
+    width: 320px;
+    /* left: 325px; */
+    left: 62%;
+    top: 35px;
+    /* padding-left: 103px; */
+    padding-left: 6.4375rem;
+    text-align: left;
+}
+
+.b-process__item3::before {
+    content: '3';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    /* font-size: 24px;
+    line-height: 28px; */
+    font-size: 1.5rem;
+    font-size: 1.75rem;
+    width: 62px;
+    height: 62px;
+    left: 0px;
+    top: -4px;
+    border-radius: 50%;
+    background: radial-gradient(#651FFF 45%,
+            white 45% 55%, #FCBF14 55% 100%);
+    animation: front-rotation 5s ease-in-out infinite normal running 0s none;
+}
+
+.b-process__item4 {
+    box-sizing: content-box;
+    width: 269px;
+    /* left: 485px; */
+    left: 69.3%;
+    top: 260px;
+    /* padding-left: 78px; */
+    padding-left: 4.875rem;
+    text-align: left;
+
+}
+
+.b-process__item4::before {
+    content: '4';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    /* font-size: 24px;
+    line-height: 28px; */
+    font-size: 1.5rem;
+    font-size: 1.75rem;
+    width: 62px;
+    height: 62px;
+    left: 0px;
+    top: -4px;
+    border-radius: 50%;
+    background: radial-gradient(#651FFF 45%,
+            white 45% 55%, #FCBF14 55% 100%);
+    animation: front-rotation 5s ease-in-out infinite normal running 0s none;
+}
+
+@media (max-width: 1250px) {
+    .for-whom__b-process {
+        /* opacity: 0.5; */
+    }
+
+    .b-process {
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        opacity: 1;
+    }
+
+    .b-process__item1,
+    .b-process__item2,
+    .b-process__item3,
+    .b-process__item4 {
+        position: absolute;
+        text-align: left;
+        padding: 0;
+        padding-left: 4.875rem;
+        padding-bottom: 0;
+        width: 80%;
+        margin-left: 1rem;
+    }
+
+    .b-process__item4 {
+        padding-bottom: 0;
+    }
+
+    .b-process__item1 {
+        top: 0px;
+        left: 1rem;
+    }
+
+    .b-process__item2 {
+        top: 65px;
+        left: 1rem;
+    }
+
+    .b-process__item1::before {
+        top: -13px;
+        left: 0;
+    }
+
+    .b-process__item2::before {
+        top: -11px;
+        left: 0;
+    }
+
+    .b-process__item3 {
+        top: 130px;
+        left: 1rem;
+    }
+
+    .b-process__item4 {
+        top: 195px;
+        left: 1rem;
+    }
+
+    .b-process img {
+        opacity: 0.6;
+    }
+
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+
+    .b-process {
+        height: 300px;
+    }
+
+    .b-process img {
+        display: none;
+    }
+
+    .b-process__item1 {
+        top: 0px;
+        left: 1rem;
+    }
+
+    .b-process__item2 {
+        top: 65px;
+        left: 1rem;
+    }
+
+    .b-process__item3 {
+        top: 140px;
+        left: 1rem;
+    }
+
+    .b-process__item4 {
+        top: 210px;
+        left: 1rem;
+    }
+
+    .b-process__item1,
+    .b-process__item2,
+    .b-process__item3,
+    .b-process__item4 {
+        padding-left: 5.875rem;
+        margin: 0;
+    }
+}

@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto/Roboto-Regular.woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto/Roboto-Medium.woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('../fonts/Roboto/Roboto-Bold.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url('../fonts/Roboto-Condensed/RobotoCondensed-Regular.woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url('../fonts/Roboto-Condensed/RobotoCondensed-Bold.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url('../fonts/Rubik/Rubik-Bold.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* ========================================== */
+
+html{
+    font-size: 16px;
+}
+
+/* ............................................ */
+@keyframes descent{
+    0%{
+        top: -300px;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+@keyframes front-rotation{
+    0% {
+      transform: rotateY(0deg);
+    }
+    /* 80% {
+      transform: rotateY(360deg);
+    } */
+    100%{
+        transform: rotateY(360deg);
+    }
+  }
